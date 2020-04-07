@@ -12,3 +12,10 @@
     border-color: #f8f9fa;
     /* border-radius: 50%; */
 }
+
+.msg{
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: #fff;
+
+}
