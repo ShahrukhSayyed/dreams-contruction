@@ -1,6 +1,2 @@
 {    
-    "REST_API_BASEURL":"https://services-deepsight.griffyn.io:11002/services/v1/deepsight",
-    "REST_API_KEY":"",
-    "TABLEAU_DASHBOARD_BASE_URL":"https://tableau.griffyn.io/trusted/",
-    "TABLEAU_DASHBOARD_VIEW_URL":"/views/COVID-19/Covid-19?iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:showVizHome=no&:toolbar=no"
 }
