@@ -1,0 +1,156 @@
+
+/* projects Section
+--------------------------------*/
+#projects {
+    padding: 8rem 0;
+  }
+  
+  #projects #projects-flters {
+    padding: 0;
+    margin: 5px 0 35px 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  #projects #projects-flters li {
+    cursor: pointer;
+    margin: 15px 15px 15px 0;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #666666;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background: #fff;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #projects #projects-flters li:hover, #projects #projects-flters li.filter-active {
+    background: #2f4f4f;
+    color: #fff;
+  }
+  
+  #projects #projects-flters li:last-child {
+    margin-right: 0;
+  }
+  
+  #projects .projects-wrap {
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+  }
+  
+  #projects .projects-wrap:hover {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+  }
+  
+  #projects .projects-item {
+    position: relative;
+    height: 360px;
+    overflow: hidden;
+  }
+  
+  #projects .projects-item figure {
+    background: #fff;
+    overflow: hidden;
+    height: 240px;
+    position: relative;
+    border-radius: 4px 4px 0 0;
+    margin: 0;
+  }
+  
+  #projects .projects-item figure:hover img {
+    opacity: 0.4;
+    transition: 0.3s;
+  }
+  
+  #projects .projects-item figure .link-preview, #projects .projects-item figure .link-details {
+    position: absolute;
+    display: inline-block;
+    opacity: 0;
+    line-height: 1;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    background: #2f4f4f;
+    border-radius: 50%;
+    transition: 0.2s linear;
+  }
+  
+  #projects .projects-item figure .link-preview i, #projects .projects-item figure .link-details i {
+    padding-top: 6px;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  #projects .projects-item figure .link-preview:hover, #projects .projects-item figure .link-details:hover {
+    background: #2f4f4f;
+  }
+  
+  #projects .projects-item figure .link-preview:hover i, #projects .projects-item figure .link-details:hover i {
+    color: #fff;
+  }
+  
+  #projects .projects-item figure .link-preview {
+    left: calc(50% - 38px);
+    top: calc(50% - 18px);
+  }
+  
+  #projects .projects-item figure .link-details {
+    right: calc(50% - 38px);
+    top: calc(50% - 18px);
+  }
+  
+  #projects .projects-item figure:hover .link-preview {
+    opacity: 1;
+    left: calc(50% - 44px);
+  }
+  
+  #projects .projects-item figure:hover .link-details {
+    opacity: 1;
+    right: calc(50% - 44px);
+  }
+  
+  #projects .projects-item .projects-info {
+    background: #fff;
+    text-align: center;
+    padding: 30px;
+    height: 90px;
+    border-radius: 0 0 3px 3px;
+  }
+  
+  #projects .projects-item .projects-info h4 {
+    font-size: 18px;
+    line-height: 1px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    padding-bottom: 0;
+  }
+  
+  #projects .projects-item .projects-info h4 a {
+    color: #333;
+  }
+  
+  #projects .projects-item .projects-info h4 a:hover {
+    color: #2f4f4f;
+  }
+  
+  #projects .projects-item .projects-info p {
+    padding: 0;
+    margin: 0;
+    color: #b8b8b8;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  
+  /* Section with background
+--------------------------------*/
+.section-bg {
+    background: #f7f7f7;
+  }
+
+  .container{
+    margin-bottom:1rem; 
+  }

@@ -1,0 +1,46 @@
+.avatar-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+  }
+
+  .initials {
+    position: relative;
+    /* top: 25px; 25% of parent */
+    font-size: 1rem; /* 50% of parent */
+    /* line-height: 50px; 50% of parent */
+    color: #2f4f4f;
+    /* font-family: "Courier New", monospace; */
+    font-weight: bold;
+  }
+
+  [data-letters]:before {
+    content:attr(data-letters);
+    display:inline-block;
+    font-size:1em;
+    width:2.5em;
+    height:2.5em;
+    line-height:2.5em;
+    text-align:center;
+    border-radius:50%;
+    background:#fff;
+    vertical-align:middle;
+    color:#2f4f4f;
+    }
+
+
+    .container{
+      margin-right:0px; 
+    }
+
+    .icon{
+      color:#2f4f4f !important; 
+    }
+
+    .image-logo{
+      height: 60px;
+    }

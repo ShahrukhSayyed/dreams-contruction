@@ -1,0 +1,53 @@
+<!-- Contact section-->
+<section class="page-section section-background" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-12 text-center">
+            <h2 class="mt-0">Let's Get In Touch!</h2>
+            <hr class="divider my-4" />
+            <p class=" mb-5">Ready to start your next project with us? Give us a call or send us an email and
+              we
+              will get back to you as soon as possible!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 ml-auto text-center mb-5 mb-lg-0">
+            <i class="fas fa-phone fa-3x mb-3 icon"></i>
+            <div class="contact-info">+91 90 96 845301</div>
+          </div>
+          <div class="col-lg-6 mr-auto text-center">
+            <i class="fas fa-envelope fa-3x mb-3 icon"></i>
+            <!-- Make sure to change the email address in BOTH the anchor text and the link target below!--><a
+              class="contact-info" href="mailto:dreamsconstruction05@gmail.com">dreamsconstruction05@gmail.com</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 m-auto text-center col-sm-12 col-md-12 mt-5em">
+        <form class="create-form" [formGroup]="contactForm" novalidate (ngSubmit)="onSubmit(contactForm.value)">
+
+          <div class="form-group">
+            <input placeholder="Your Name" class="form-control" formControlName="name" maxlength="50"
+              onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode >= 48 && event.charCode <= 57) || (event.charCode == 32) "
+              minlength="5" required>
+          </div>
+
+          <div class="form-group">
+            <input type="text" placeholder="10 Digit Mobile Number" class="form-control" formControlName="contactNumber"
+              [pattern]="mobNumberPattern" required>
+            <p style="font-size: 12px;">*Your contact information will be safe with us !</p>
+
+          </div>
+
+          <button class="btn btn-light btn-xl js-scroll-trigger" type="submit" [disabled]="!contactForm.valid" >Contact
+            Me</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

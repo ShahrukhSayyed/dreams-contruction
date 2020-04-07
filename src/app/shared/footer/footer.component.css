@@ -1,0 +1,50 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2f4f4f !important;
+    color: #fff !important ;
+    text-align: center;
+    padding: 1em;
+  }
+
+  .copyright{
+    margin-left:18rem ;
+    font-size: 100%;
+    font-weight: 400;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .copyright {
+      margin-left:0px; 
+      font-size: 68%;
+
+    }
+  }
+
+  a{
+    color: #fff;
+  }
+
+  .container{
+    margin-right:0px; 
+  }
+
+  .icon{
+    height: 30px;
+    width: 40px;
+  }
+
+  .icon-fb:hover{
+    color:#3b5998;
+    background-color: #fff;
+  }
+
+  .icon-insta:hover{
+    color: #8a3ab9;
+    background-color: #fff;
+  }
+
+
+

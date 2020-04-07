@@ -1,0 +1,32 @@
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <!-- <span class="db"><img src="assets/img/dreams-logo-in2.png" alt="logo" class="image-logo"/></span> -->
+
+      <a class="navbar-brand js-scroll-trigger" href="JavaScript:void(0)" (click)="changeSection('home/head')">Dreams Contruction</a><button
+        class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive" #navbarResponsive>
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+            <li class="nav-item" ><a class="nav-link js-scroll-trigger" [class.active]="showedSection === 'about'"  href="JavaScript:void(0)" (click)="changeSection('home/head')" >Home</a></li>
+          <li class="nav-item" ><a class="nav-link js-scroll-trigger" [class.active]="showedSection === 'about'"  href="JavaScript:void(0)" (click)="changeSection('home/about')" >About</a></li>
+          <li class="nav-item" ><a class="nav-link js-scroll-trigger" [class.active]="showedSection === 'services'"  href="JavaScript:void(0)" (click)="changeSection('home/services')">Services</a></li>
+          <li class="nav-item" ><a class="nav-link js-scroll-trigger" [class.active]="showedSection === 'projects'" href="JavaScript:void(0)" (click)="changeSection('home/projects')">Projects</a></li>
+          <li class="nav-item" ><a class="nav-link js-scroll-trigger" [class.active]="showedSection === 'contact-us'" href="JavaScript:void(0)" (click)="changeSection('home/contact-us')">Contact Us</a></li>
+          <li *ngIf="userLogin == 'false' || userLogin == undefined" class="nav-item" ><a class="nav-link js-scroll-trigger" [class.active]="showedSection === 'login'" href="JavaScript:void(0)" (click)="changeSection('authentication/login')">Login</a></li>
+          <li *ngIf="userLogin == 'true'" class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">            
+              <span data-letters="DC"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <!-- <a class="dropdown-item" href="JavaScript:void(0)" (click)="changeSection('admin/users')">Users</a> -->
+              <a class="dropdown-item" href="JavaScript:void(0)" (click)="changeSection('admin/projects-management')" ><i class="fas fa-hotel icon"></i> Projects</a>
+              <a class="dropdown-item" href="JavaScript:void(0)" (click)="changeSection('admin/enquiries')" > <i class="fas fa-tasks icon"></i> Enquries</a>
+              <a class="dropdown-item" href="JavaScript:void(0)" (click)="logoutFunction()"> <i class="fa fa-power-off m-r-5 m-l-5 icon"></i> Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,38 @@
+<div class="container auth-wrapper">
+
+    <h2 class="text-center mt-0">Enquiries</h2>
+    <hr class="divider my-4" />
+  
+    <div class="row text-center">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+          <ngx-datatable
+          class="material"
+          [rows]="allEnquiries"
+          [columnMode]="'force'"
+          [headerHeight]="50"
+          [footerHeight]="50"
+          rowHeight="auto"
+          [limit]="5"
+          [sorts]="[{ prop: 'dateOfEnquiry', dir: 'desc'}]">
+
+          <ngx-datatable-column prop="name" name="Name" [width]="200" [draggable]="false">
+              <ng-template ngx-datatable-cell-template let-value="value">
+                {{ value }}
+              </ng-template>
+            </ngx-datatable-column>
+                
+            <ngx-datatable-column name="Contact Number" prop="contactNumber" [width]="200" [draggable]="false">
+                <ng-template ngx-datatable-cell-template let-value="value">
+                  {{ value }}
+                </ng-template>
+              </ngx-datatable-column>
+              <ngx-datatable-column name="Date of Enquiry" prop="dateOfEnquiry" [width]="200" [draggable]="false">
+                  <ng-template ngx-datatable-cell-template let-value="value">
+                    {{ value | date:'medium'}}
+                  </ng-template>
+                </ngx-datatable-column>
+                    
+        </ngx-datatable>
+      </div>
+    </div>
+  </div>

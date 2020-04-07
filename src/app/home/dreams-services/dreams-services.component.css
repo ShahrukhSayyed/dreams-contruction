@@ -1,0 +1,23 @@
+.serviceBox{
+    border-top: 5px solid #00a88a;
+    border-radius: 0 0 .5em .5em;
+    box-shadow: 0 0 0.5em 1px #ccc;
+}
+
+.m-1em{
+    margin:1em;
+}
+
+.card:hover{
+    box-shadow: 0 0 0.5em 5px #2f4f4f;
+    transition: box-shadow 1s;
+
+}
+/* 
+.card{
+    height: 80vh !important
+  }
+     */
+  .card-img-top{
+      height: 150px;
+  }  

@@ -1,0 +1,53 @@
+<div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="background:url(assets/img/bg-masthead.jpg) no-repeat center center;">
+  <div class="auth-box on-sidebar">
+      <div id="loginform" [ngClass]="{'d-none': _recoverform}">
+          <div class="logo">
+              <span class="db"><img src="assets/img/dreams-logo.jpeg" alt="logo" class="image-logo"/></span>
+              <h5 class="font-medium m-b-20">Sign In to Admin</h5>
+          </div>
+          <!-- Form -->
+          <div class="row">
+              <div class="col-12">
+                <form class="create-form" [formGroup]="loginForm" novalidate (ngSubmit)="onSubmit()">
+                    <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"><i class="fas fa-user-tie"></i></span>
+                          </div>
+                              <input type="text" placeholder="Username" class="form-control" formControlName="userName" maxlength="50" required> 
+                        </div>
+                      <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon2"><i class="fas fa-key"></i></span>
+                          </div>
+                          <input type="password" placeholder="Password" class="form-control" formControlName="password" maxlength="50" required> 
+                        </div>
+                      <div class="form-group row">
+                          <div class="col-md-12">
+                              <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                  <label class="custom-control-label" for="customCheck1">Remember me</label>
+                                  <a (click)="showRecoverForm()" href="javascript:void(0)" id="to-recover" class="text-dark float-right"><i class="fa fa-lock m-r-5"></i> Forgot pwd?</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form-group text-center">
+                          <div class="col-xs-12 p-b-20">
+                              <button class="btn btn-block btn-lg btn-info" type="submit" [disabled]="!loginForm.valid">Log In</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div id="recoverform" [ngClass]="{'d-block': _recoverform}">
+          <div class="logo">
+              <span class="db"><img src="assets/img/dreams-logo.jpeg" alt="logo" class="image-logo"/></span>
+              <h5 class="font-medium m-b-20">Recover Password</h5>
+              <span>Ask your administrator to reset the password!</span>
+          </div>
+          <div class="text-center m-5">
+            <a (click)="showRecoverForm()" href="javascript:void(0)" id="to-recover" class="text-dark"><i class="fas fa-sign-in-alt"></i> Login </a>
+          </div>
+      </div>
+  </div>
+</div>

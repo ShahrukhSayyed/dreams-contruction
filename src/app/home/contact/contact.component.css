@@ -1,0 +1,14 @@
+.mt-5em{
+    margin-top: 6em !important;
+}
+
+.contact-info{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    background-color: #2f4f4f;
+    color: #fff;
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    /* border-radius: 50%; */
+}
